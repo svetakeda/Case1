@@ -3,6 +3,8 @@
 #
 #
 import turtle
+import math
+import time
 
 def paragram1(x,y,a,color):
     #TODO:(Kirill) Function, drawing parallelogram1.
@@ -21,11 +23,41 @@ def paragram4(x,y,a,color):
     pass
 
 def square1(x,y,a,color):
-    #TODO:(Kirill) Function, drawing square1.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.begin_fill()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
     pass
 
 def square2(x,y,a,color):
-    #TODO:(Kirill) Function, drawing square2.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.begin_fill()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.forward(a/math.sqrt(2))
+    turtle.down()
+    turtle.right(45)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.left(45)
+    turtle.end_fill()
     pass
 
 def triangle1(x,y,a,color):
@@ -69,3 +101,5 @@ def main():
     Main function.
     :return: None
     '''
+
+time.sleep(3)
