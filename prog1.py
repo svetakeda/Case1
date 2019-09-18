@@ -1,7 +1,7 @@
 # Case-study #1
-# Developers:   Ivanov A. (20%),
-#               Petrova S. (60%),
-#               Sidorov M. (30%)
+# Developers:
+#
+#               
 import turtle
 
 
