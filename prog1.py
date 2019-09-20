@@ -62,6 +62,7 @@ def square2(x,y,a,color):
 
 def triangle1(x,y,a,color):
     #TODO:(Sveta) Function, drawing triangle1.
+    ggg
     pass
 
 def triangle2(x,y,a,color):
