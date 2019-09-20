@@ -7,19 +7,79 @@ import math
 import time
 
 def paragram1(x,y,a,color):
-    #TODO:(Kirill) Function, drawing parallelogram1.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.begin_fill()
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.forward(math.sqrt(2)*a)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.forward(math.sqrt(2)*a)
+    turtle.right(135)
+    turtle.end_fill()
     pass
 
 def paragram2(x,y,a,color):
-    #TODO:(Kirill) Function, drawing parallelogram2.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.begin_fill()
+    turtle.down()
+    turtle.right(45)
+    turtle.forward(math.sqrt(2) * a)
+    turtle.right(45)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(math.sqrt(2) * a)
+    turtle.right(45)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
     pass
 
 def paragram3(x,y,a,color):
-    #TODO:(Kirill) Function, drawing parallelogram3.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.forward(a)
+    turtle.begin_fill()
+    turtle.down()
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.forward(math.sqrt(2) * a)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.forward(math.sqrt(2) * a)
+    turtle.right(45)
+    turtle.end_fill()
     pass
 
 def paragram4(x,y,a,color):
-    #TODO:(Kirill) Function, drawing parallelogram4.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.forward(a)
+    turtle.begin_fill()
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(math.sqrt(2) * a)
+    turtle.right(45)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(math.sqrt(2) * a)
+    turtle.right(45)
+    turtle.end_fill()
     pass
 
 def square1(x,y,a,color):
@@ -43,11 +103,11 @@ def square1(x,y,a,color):
 def square2(x,y,a,color):
     turtle.fillcolor(color)
     turtle.pencolor(color)
-    turtle.begin_fill()
     turtle.up()
     turtle.setposition(x, y)
     turtle.forward(a/math.sqrt(2))
     turtle.down()
+    turtle.begin_fill()
     turtle.right(45)
     turtle.forward(a)
     turtle.right(90)
@@ -56,12 +116,11 @@ def square2(x,y,a,color):
     turtle.forward(a)
     turtle.right(90)
     turtle.forward(a)
-    turtle.left(45)
+    turtle.right(45)
     turtle.end_fill()
     pass
 
 def triangle1(x,y,a,color):
-    #TODO:(Sveta) Function, drawing triangle1.
     turtle.fillcolor(color)
     turtle.pencolor(color)
     turtle.up()
@@ -81,7 +140,6 @@ def triangle1(x,y,a,color):
     pass
 
 def triangle2(x,y,a,color):
-    #TODO:(Sveta) Function, drawing triangle2.
     turtle.fillcolor(color)
     turtle.pencolor(color)
     turtle.up()
@@ -99,7 +157,6 @@ def triangle2(x,y,a,color):
     pass
 
 def triangle3(x,y,a,color):
-    #TODO:(Sveta) Function, drawing triangle3.
     turtle.fillcolor(color)
     turtle.pencolor(color)
     turtle.down()
@@ -115,7 +172,6 @@ def triangle3(x,y,a,color):
     pass
 
 def triangle4(x,y,a,color):
-    #TODO:(Sveta) Function, drawing triangle4.
     turtle.fillcolor(color)
     turtle.pencolor(color)
     turtle.down()
@@ -155,4 +211,5 @@ def main():
     Main function.
     :return: None
     '''
-
+paragram4(0,0,100,'blue')
+time.sleep(3)
