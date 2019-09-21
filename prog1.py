@@ -187,19 +187,70 @@ def triangle4(x,y,a,color):
     pass
 
 def triangleleft(x,y,a,color):
-    #TODO:(Vova) Function, drawing triangle.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.forward(a/2)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(math.sqrt(0.5)*a)
+    turtle.right(90)
+    turtle.forward(math.sqrt(0.5) * a)
+    turtle.right(45)
+    turtle.end_fill()
     pass
 
 def triangleright(x,y,a,color):
-    #TODO:(Vova) Function, drawing triangle.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.down()
+    turtle.setposition(x, y)
+    turtle.begin_fill()
+    turtle.right(45)
+    turtle.forward(math.sqrt(0.5)*a)
+    turtle.right(90)
+    turtle.forward(math.sqrt(0.5) * a)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
     pass
 
 def triangleup(x,y,a,color):
-    #TODO:(Vova) Function, drawing triangle.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.setposition(x, y)
+    turtle.up()
+    turtle.forward(a/2)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.right(45)
+    turtle.forward(math.sqrt(0.5) * a)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(math.sqrt(0.5) * a)
+    turtle.right(45)
+    turtle.end_fill()
     pass
 
 def triangledown(x,y,a,color):
-    #TODO:(Vova) Function, drawing triangle.
+    turtle.fillcolor(color)
+    turtle.pencolor(color)
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(math.sqrt(0.5) * a)
+    turtle.right(90)
+    turtle.forward(math.sqrt(0.5) * a)
+    turtle.right(135)
+    turtle.end_fill()
     pass
 
 #TODO:(Kirill) Functions drawing pictures 1,2,3
@@ -211,5 +262,5 @@ def main():
     Main function.
     :return: None
     '''
-paragram4(0,0,100,'blue')
-time.sleep(3)
+#paragram4(0,0,100,'blue')
+triangledown(0,0,100,"green")
